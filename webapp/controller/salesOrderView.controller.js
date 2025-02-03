@@ -2,6 +2,7 @@ sap.ui.define([
         "sap/ui/core/mvc/Controller",
         "sap/ui/model/json/JSONModel"
     ],
+
     function (Controller,JSONModel) {
         "use strict";
      
@@ -13,7 +14,7 @@ sap.ui.define([
                 var oItem=oEvent.getParameter("selectedItem")
                 var key=oItem.mProperties.key
                        
-                var entity="/BusinessPartnerSet('" + key + "')/ToSalesOrder"
+                var entity="/BusinessPartnerSet('" + key + "')/ToSalesOrders"
                 var oModel=this.getOwnerComponent().getModel()
                  var that=this
                 oModel.read(entity,{
